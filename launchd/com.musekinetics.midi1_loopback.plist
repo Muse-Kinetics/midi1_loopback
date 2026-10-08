@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.musekinetics.midi1_loopback</string>
+
+    <!-- Adjust these paths to match where you installed the binary and config.
+         The defaults match `sudo cmake --install build` with the default
+         /usr/local prefix. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/midi1_loopback</string>
+        <string>--config</string>
+        <string>/usr/local/share/midi1_loopback/port_config.json</string>
+    </array>
+
+    <!-- Start at login and relaunch if it ever exits. -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <!-- Logs. Change if you prefer ~/Library/Logs. -->
+    <key>StandardOutPath</key>
+    <string>/tmp/midi1_loopback.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/midi1_loopback.err.log</string>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+</dict>
+</plist>

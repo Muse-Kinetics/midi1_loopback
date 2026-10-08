@@ -1,0 +1,7 @@
+{
+  "verbose": false,
+  "ports": [
+    { "name": "M1 Bus 1" },
+    { "name": "M1 Bus 2" }
+  ]
+}

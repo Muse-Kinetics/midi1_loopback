@@ -1,0 +1,21 @@
+# Build output
+/build/
+build/
+cmake-build-*/
+
+# Compiled binaries / objects
+midi1_loopback
+*.o
+*.obj
+*.exe
+
+# CMake FetchContent cache (RtMidi is pulled at configure time)
+_deps/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
